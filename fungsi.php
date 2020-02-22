@@ -33,3 +33,10 @@ class Fungsi{
   	}
 }
 $fungsi = new Fungsi();
+function  base($url = ""){
+	return "http://".$_SERVER['HTTP_HOST']."/BootcampArkademy/soal7/".$url;
+}
+function input($txt){
+	return strip_tags(stripcslashes(htmlentities($txt, ENT_QUOTES)));
+}
+?>
